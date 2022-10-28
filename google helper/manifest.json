@@ -1,0 +1,23 @@
+{
+    "name": "Google-Helper",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "use to have a advance google search",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
